@@ -26,7 +26,7 @@ export class NewComponentFromCodeProvider implements vscode.CodeActionProvider {
 
     const actionTitle = `PowerReact: Create new component <${componentName}>`
     const action = new vscode.CodeAction(actionTitle, vscode.CodeActionKind.QuickFix)
-    action.command = { command: NewComponentFromCodeCommand.COMMAND_ID, title: actionTitle }
+    action.command = { command: NewComponentFromCodeCommand.COMMAND_ID, arguments: [document, diagnostic.range], title: actionTitle }
     action.diagnostics = [diagnostic]
     return action
   }
