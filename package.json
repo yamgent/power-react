@@ -1,23 +1,25 @@
 {
   "name": "power-react",
-  "displayName": "power-react",
+  "displayName": "PowerReact",
   "description": "Develop React code quicker",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.46.0"
   },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:power-react.helloWorld"
+    "onLanguage:typescriptreact",
+    "onCommand:power-react.newComponentFromCode"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "power-react.helloWorld",
-        "title": "Hello World"
+        "command": "power-react.newComponentFromCode",
+        "title": "Create New Component from Code"
       }
     ]
   },
