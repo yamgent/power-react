@@ -2,8 +2,9 @@
 
 All notable changes to the "power-react" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
 
+## 0.1.0
+
 - Initial release
+- Added a "Create component via Quickfix" feature. Use a non-existant JSX component tag, then use the "PowerReact: Create component <...>" quick fix to automatically generate the empty source code for a new component.
